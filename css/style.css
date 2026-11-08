@@ -19,3 +19,15 @@
 .top-breakroom{margin:0 0 14px;padding:14px;background:rgba(17,25,37,.97);border:1px solid var(--bd);border-radius:16px}
 .top-breakroom .break-illust img{max-height:360px;object-fit:cover}
 @media(max-width:620px){.top-breakroom{margin-bottom:12px;padding:10px}.top-breakroom .break-illust img{max-height:260px}}
+
+/* PC: keep the whole break-room illustration visible instead of cropping it */
+@media (min-width:621px){
+  .top-breakroom .break-illust img{
+    width:100%;
+    height:360px;
+    max-height:none;
+    object-fit:contain;
+    object-position:center;
+    background:#0b1119;
+  }
+}
